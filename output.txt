@@ -1,5 +1,4 @@
-25
-False
-False
-True
-True
+num2 is smaller
+End of program
+Adult
+Grade B
