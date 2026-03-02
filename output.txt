@@ -1,10 +1,5 @@
-Shiv's age is 26He is also knowm as "Shiva"
-Shivansh Tandon Shivansh Tandon Shivansh Tandon 
-8
 Tandon
-don
-Hi I'm Shivansh Tandon 
-I'm a FullStack Python AI Engineer
-Hi I'm Shivansh Tandon 	I'm a FullStack Python AI Engineer
-Hi I'm Shivansh Tandon \I'm a FullStack Python AI Engineer
-My name is Shivansh, age is 26 and role is AI FullStack Engineer
+TANDON
+tandon
+['tAndon']
+3
