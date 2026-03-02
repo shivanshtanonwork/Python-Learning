@@ -3,9 +3,23 @@ import sys
 sys.stdin = open('input.txt','r')
 sys.stdout = open('output.txt','w')
 
-# String Methods
-name = "tAndon"
-print(name.capitalize()) # it doesn't changes the string 
-print(name.upper())
-print(name.lower())
-print(name.find("don"))
+# Type Conversion
+x = int(input())
+y = int(input())
+num = x+y
+print(num)
+
+# int()
+# float()
+# str()
+# bool()
+
+# comparing operators
+num1 = 10
+num2 = 12
+
+
+print(num1 == num2)
+print(num1 >= num2)
+print(num1 <= num2)
+print(num1 != num2)

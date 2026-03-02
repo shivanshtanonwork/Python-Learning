@@ -1,5 +1,5 @@
-Tandon
-TANDON
-tandon
-['tAndon']
-3
+25
+False
+False
+True
+True
