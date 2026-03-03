@@ -3,21 +3,16 @@ import sys
 sys.stdin = open('input.txt','r')
 sys.stdout = open('output.txt','w')
 
-from collections import deque
-# deque - (double-ended queue)
-dq = deque([2,3,1])
+from collections import Counter
 
-dq.append(5) # adds element from right or end
-print(dq)
+arr = Counter([1,2,2,3,2,3,3,4]) # Count elements 
+print(arr)
+print(arr[2])
 
-dq.appendleft(15)
-print(dq)
+print(arr.most_common(2)) # 2 here is top 2
 
-dq.pop() # pops out last element from right 
-print(dq)
+print(list(arr.elements())) # python follows the insertion order
 
-dq.extend([10,"Shivansh"])
-print(dq)
-
-dq.extendleft([1999,27])
-print(dq)
+arr.update([7])
+arr.subtract([3])
+print(list(arr.elements())) 
