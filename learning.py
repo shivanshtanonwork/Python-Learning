@@ -3,28 +3,32 @@ import sys
 sys.stdin = open('input.txt','r')
 sys.stdout = open('output.txt','w')
 
-# ternary operator
-age = int(input())
-status = "Adult" if age >= 18 else "Minor"
-print(status)
+for i in range(0,15):
+    print("Hello Shivansh")
 
-# comparison operators and or 
-x = 10
-y = 15
-z = 5
 
-if x > y and x > z:
-    print(f"{x} is greatest")
-elif y > x and y > z:
-    print(f"{y} is greatest")
-elif z > x and z > y:
-    print(f"{z} is greatest")
+for i in range(0,10,2):
+    print(i)
+
+for i in range(15, 0, -1):
+    print(i)
+
+for i in range(0,5):
+    print(f"value of i {i}")
+    print()
+    for j in range(0,5):
+        print(f"value of j {j}")
+    print()
+
+i = 0
+while i < 5:
+    print(i)
+    i = i + 1   
+
+
+for i in range(0,5):
+    print("Hello")
+    if i == 3:
+        break
 else:
-    print("They may be equal nos.")
-
-
-name = input()
-if len(name)>0 and (name[1] == "S" or name[-2] == "h"):
-    print("yes")
-else:
-    print("no")
+    print("Entire loop was run")
