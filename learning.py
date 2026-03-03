@@ -3,16 +3,15 @@ import sys
 sys.stdin = open('input.txt','r')
 sys.stdout = open('output.txt','w')
 
-from collections import Counter
+# (key, value)
 
-arr = Counter([1,2,2,3,2,3,3,4]) # Count elements 
-print(arr)
-print(arr[2])
+from collections import defaultdict
 
-print(arr.most_common(2)) # 2 here is top 2
-
-print(list(arr.elements())) # python follows the insertion order
-
-arr.update([7])
-arr.subtract([3])
-print(list(arr.elements())) 
+dd = defaultdict(int)
+dd[1] ="shivansh"
+print(dd[1])
+dd["fname"] = "shivansh"
+dd['u'] = 99
+dd['list'] = [1,2,4]
+print(dd['list'])
+print(dd["xyz"]) # since it's a defaultdict initialised with int it always returns 0
