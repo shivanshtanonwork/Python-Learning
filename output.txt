@@ -82,3 +82,6 @@ Hello
 Hello
 Hello
 Hello
+Hello Python functions
+8
+25

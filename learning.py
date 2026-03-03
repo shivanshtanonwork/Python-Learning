@@ -32,3 +32,21 @@ for i in range(0,5):
         break
 else:
     print("Entire loop was run")
+
+
+def demo():
+    print("Hello Python functions")
+
+demo()
+
+
+def sum(a,b=4):
+    print(a+b)
+
+sum(4)
+
+def product(x,y):
+    return x * y
+
+res = product(5,5)
+print(res)
