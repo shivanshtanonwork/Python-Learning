@@ -3,50 +3,14 @@ import sys
 sys.stdin = open('input.txt','r')
 sys.stdout = open('output.txt','w')
 
-for i in range(0,15):
-    print("Hello Shivansh")
+# lists
+nums = [1,5,6,7,7,9]
+print(len(nums))
 
+for items in nums:
+    print(items)
 
-for i in range(0,10,2):
-    print(i)
-
-for i in range(15, 0, -1):
-    print(i)
-
-for i in range(0,5):
-    print(f"value of i {i}")
-    print()
-    for j in range(0,5):
-        print(f"value of j {j}")
-    print()
-
-i = 0
-while i < 5:
-    print(i)
-    i = i + 1   
-
-
-for i in range(0,5):
-    print("Hello")
-    if i == 3:
-        break
-else:
-    print("Entire loop was run")
-
-
-def demo():
-    print("Hello Python functions")
-
-demo()
-
-
-def sum(a,b=4):
-    print(a+b)
-
-sum(4)
-
-def product(x,y):
-    return x * y
-
-res = product(5,5)
-print(res)
+nums.append(10)
+print(nums)
+nums.clear()
+print(nums)

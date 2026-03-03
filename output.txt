@@ -1,87 +1,9 @@
-Hello Shivansh
-Hello Shivansh
-Hello Shivansh
-Hello Shivansh
-Hello Shivansh
-Hello Shivansh
-Hello Shivansh
-Hello Shivansh
-Hello Shivansh
-Hello Shivansh
-Hello Shivansh
-Hello Shivansh
-Hello Shivansh
-Hello Shivansh
-Hello Shivansh
-0
-2
-4
 6
-8
-15
-14
-13
-12
-11
-10
-9
-8
-7
-6
+1
 5
-4
-3
-2
-1
-value of i 0
-
-value of j 0
-value of j 1
-value of j 2
-value of j 3
-value of j 4
-
-value of i 1
-
-value of j 0
-value of j 1
-value of j 2
-value of j 3
-value of j 4
-
-value of i 2
-
-value of j 0
-value of j 1
-value of j 2
-value of j 3
-value of j 4
-
-value of i 3
-
-value of j 0
-value of j 1
-value of j 2
-value of j 3
-value of j 4
-
-value of i 4
-
-value of j 0
-value of j 1
-value of j 2
-value of j 3
-value of j 4
-
-0
-1
-2
-3
-4
-Hello
-Hello
-Hello
-Hello
-Hello Python functions
-8
-25
+6
+7
+7
+9
+[1, 5, 6, 7, 7, 9, 10]
+[]
