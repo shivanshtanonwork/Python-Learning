@@ -1,30 +1,28 @@
 import sys
+import math
 
 sys.stdin = open('input.txt','r')
 sys.stdout = open('output.txt','w')
 
-def length(str):
-    count = 0 
-    for i in str:
-        count = count + 1
+arr = [-15, 6,8,7]
+print(max(arr, key=lambda x: abs(x)))
+
+fruits_list = ["kiwi", "apple","pineapple"]
+print(max(fruits_list,key=len))
+
+print(sum(arr))
+print(math.prod(arr)) 
+
+arr1 = [True,False,True]
+print(any(arr1))
+print(all(arr1))
+
+def count_element(arr2, number):
+    count = 0
+    for i in arr2:
+        if i == number:
+            count+=1
     return count
 
-name = "Shivansh"
-print(length(name))
-
-arr = [1,5,6,7,4]
-# print(sorted(arr))
-print(sorted(arr,reverse=True)) # only returns new array
-
-# to change array 
-arr.sort()
-print(arr)
-
-# sort these values according to absolute values of x - it does'nt alters the array
-arr1 = [-1,5,-6,7,4]
-print(sorted(arr1, key = lambda x: abs(x)))
-print(arr1)
-
-fruits_list = ["apple", "pineapple","kiwi"]
-print(sorted(fruits_list, key=len))
-print(sorted(fruits_list,reverse=True, key=len))
+arr2 = [1,2,1,7]
+print(count_element(arr2,1))
