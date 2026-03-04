@@ -1,11 +1,12 @@
-[1, 6, 2, 4, 7]
-[1, 6, 2, 4, 7, 1, 4]
-[1, 6, 15, 2, 4, 7, 1, 4]
-[1, 6, 15, 2, 7, 1, 4]
-[1, 6, 15, 2, 7, 1]
-4
-2
-[1, 1, 2, 6, 7, 15]
-[15, 7, 6, 2, 1, 1]
-[15, 7, 6, 2, 1, 1]
-[1999, 7, 6, 2, 1, 1]
+{1: 'Shivansh', 2: 'Shiva', 3: 'Shiv', 100: 'Century', 10: 'Messi'}
+Shivansh
+not found
+Century
+{1: 'Shivansh', 2: 'Shiva', 3: 'Shiv', 10: 'Messi'}
+{1: 'Shivansh', 2: 'Shiva', 3: 'Shiv'}
+[1, 2, 3]
+['Shivansh', 'Shiva', 'Shiv']
+[(1, 'Shivansh'), (2, 'Shiva'), (3, 'Shiv')]
+1 Shivansh
+2 Shiva
+3 Shiv
