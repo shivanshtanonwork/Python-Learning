@@ -3,26 +3,28 @@ import sys
 sys.stdin = open('input.txt','r')
 sys.stdout = open('output.txt','w')
 
-from collections import OrderedDict
+val = (1,4,5) #tuples - tuples are ordered and immutable
+print(val)
+val1 = (4,(6,7,9))
+print(val1[1][2])
+a,(b,c,d) = val1
+print(a,b,c,d)
 
-od = OrderedDict([(1,"Shivansh"),(3,"Mom"),(2,"Papa"),(4,"Vidushi"),(5,"DaduDadi")]) #typically key and value are of same data types in OrderedDict
+from collections import namedtuple
 
-print(od)
-print(od[1])
+Point = namedtuple("Point",['first', 'second'])
+val1 = Point(7,9)
+print(val1)
+print(val1.first, val1.second)
+NestedPoints = namedtuple('NestedPoints',['first', 'second'])
+val2 = NestedPoints(2,val1)
+print(val2)
 
-if 5 in od:
-    print(od[5])
-else:
-    print("Not in the dict")
+class Pair:
+    def __init__(self,first,second):
+        self.first=first
+        self.second=second
 
-od[10] = "messi"
-print(od)
-od.move_to_end(2, last=False)
-print(od)
-
-od.popitem()
-print(od)
-
-if 10 in od:
-    print(od.pop(10))
-print(od)
+val = Pair(2,9)
+val.first=10
+print(val.first,val.second)
