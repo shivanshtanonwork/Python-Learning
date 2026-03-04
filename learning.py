@@ -3,30 +3,21 @@ import sys
 sys.stdin = open('input.txt','r')
 sys.stdout = open('output.txt','w')
 
-# dict methods
+# Set methods
+# set doesn't allow to store duplicates like list
 
-dd = {1: "Shivansh" ,2: "Shiva", 3:"Shiv"}
+st = {1, 5, 3, 1}
+print(st) # it stores everything in a sorted manner
 
-dd[100] = "Century"
-dd.update({10:"Messi"})
-print(dd)
+st.add(0)
+print(st)
 
-print(dd.get(1))
+st.remove(3)
+print(st)
 
-print(dd.get(11,"not found"))
+st.discard(15)
+print(st)
 
-print(dd.pop(100))
-print(dd)
+st.pop() # it always pops out the 1st element from the set
+print(st)
 
-dd.popitem()
-print(dd)
-
-arr = list(dd.keys())
-print(arr)
-arr = list(dd.values())
-print(arr)
-arr = list(dd.items())
-print(arr)
-
-for item in dd.items():
-    print(item[0],item[1])

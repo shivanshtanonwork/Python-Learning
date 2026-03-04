@@ -1,12 +1,5 @@
-{1: 'Shivansh', 2: 'Shiva', 3: 'Shiv', 100: 'Century', 10: 'Messi'}
-Shivansh
-not found
-Century
-{1: 'Shivansh', 2: 'Shiva', 3: 'Shiv', 10: 'Messi'}
-{1: 'Shivansh', 2: 'Shiva', 3: 'Shiv'}
-[1, 2, 3]
-['Shivansh', 'Shiva', 'Shiv']
-[(1, 'Shivansh'), (2, 'Shiva'), (3, 'Shiv')]
-1 Shivansh
-2 Shiva
-3 Shiv
+{1, 3, 5}
+{0, 1, 3, 5}
+{0, 1, 5}
+{0, 1, 5}
+{1, 5}
