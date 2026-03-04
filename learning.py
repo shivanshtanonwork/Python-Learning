@@ -1,29 +1,27 @@
 import sys
-import bisect
+import itertools
 
 sys.stdin = open('input.txt','r')
 sys.stdout = open('output.txt','w')
 
-arr = [5,1,6,1,7,10]
-# print(arr.index(6))
-def linear_search(arr,val):
-    for i in range(0, len(arr)):
-        if arr[i] == i:
-            return i
-    return -1
+# itertools - iteration tools
 
-print(linear_search(arr,1))
+arr = [1,5,5,7]
+print(list(itertools.combinations(arr,2)))
+print(list(itertools.combinations_with_replacement(arr,3)))
 
-# bisect binary search
+print(list(itertools.permutations(arr,2)))
 
-a = [4,5,5,6,7,7,9,10,12,12,13]  # array must be sorted
-# a.sort() #use this if array not sorted
+arr1 = [1,2]
+arr2 = [3,4]
+print(list(itertools.product(arr1,arr2)))
 
-print(bisect.bisect_left(a,5)) # bisect_left tell us left most position where the the 5 is to be inserted assuming array is sorted.
 
-print(bisect.bisect_right(a,5)) # right most 
+arr = list(itertools.repeat(5,6))
+print(arr)
 
-bisect.insort(a,5)
-print(a)
+print(list(itertools.chain([1,2],[5,6],[3,4])))
 
-# we use it binary search , sorted list
+print(list(itertools.accumulate(arr)))
+
+print(list(itertools.accumulate(arr,lambda x,y:x*y)))
