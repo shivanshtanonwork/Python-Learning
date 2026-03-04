@@ -1,17 +1,22 @@
 import sys
-import math
+import random
 
 sys.stdin = open('input.txt','r')
 sys.stdout = open('output.txt','w')
 
-# math modules
-print(math.pi)
-print(math.e)
-print(math.pow(2,-3))
-print(math.sqrt(9))
-print(math.factorial(5))
-print(math.gcd(10,15))
+# random modules
+print(random.random())
 
-print(math.ceil(10.1)) # 11 it gives next integer
+print(random.randint(1,6))
 
-print(math.floor(10.8))
+print(random.randrange(0,10,2))
+
+print(random.choice([1,6,8,9]))
+
+print(random.sample([1,6,8,9],2))
+
+arr = [1,5,6,7]
+random.shuffle(arr)
+print(arr)
+
+print(random.uniform(1.0, 9.0))
