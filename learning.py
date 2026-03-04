@@ -1,30 +1,37 @@
 import sys
+import heapq
 
 sys.stdin = open('input.txt','r')
 sys.stdout = open('output.txt','w')
 
-val = (1,4,5) #tuples - tuples are ordered and immutable
+val = []
+heapq.heappush(val,10)
+heapq.heappush(val,7)
+heapq.heappush(val,15)
+heapq.heappush(val,7)
+heapq.heappush(val,2)  # it always gives us the 1st element as minimum element
 print(val)
-val1 = (4,(6,7,9))
-print(val1[1][2])
-a,(b,c,d) = val1
-print(a,b,c,d)
 
-from collections import namedtuple
+heapq.heappop(val) # smallest element is popped out
+print(val)
 
-Point = namedtuple("Point",['first', 'second'])
-val1 = Point(7,9)
-print(val1)
-print(val1.first, val1.second)
-NestedPoints = namedtuple('NestedPoints',['first', 'second'])
-val2 = NestedPoints(2,val1)
-print(val2)
+print(heapq.heappushpop(val,4))  # 1st smaller one pushes in and then pops out
+print(val)
 
-class Pair:
-    def __init__(self,first,second):
-        self.first=first
-        self.second=second
+print(heapq.heapreplace(val,3))
+print(val)
 
-val = Pair(2,9)
-val.first=10
-print(val.first,val.second)
+
+print(heapq.nlargest(3, [7, 1, 5, 3, 10])) # in this iterable give me 3 largest element
+
+
+arr = [7,8,10,1,-15,2]
+heapq.heapify(arr)
+print(arr)
+
+# max heap
+arr = [6, 7, 8, 10, 9]
+pq = []
+for item in arr:
+    heapq.heappush(pq, -1 * item)
+print(-1*pq[0])
