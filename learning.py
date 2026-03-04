@@ -1,37 +1,29 @@
 import sys
-import heapq
+import bisect
 
 sys.stdin = open('input.txt','r')
 sys.stdout = open('output.txt','w')
 
-val = []
-heapq.heappush(val,10)
-heapq.heappush(val,7)
-heapq.heappush(val,15)
-heapq.heappush(val,7)
-heapq.heappush(val,2)  # it always gives us the 1st element as minimum element
-print(val)
+arr = [5,1,6,1,7,10]
+# print(arr.index(6))
+def linear_search(arr,val):
+    for i in range(0, len(arr)):
+        if arr[i] == i:
+            return i
+    return -1
 
-heapq.heappop(val) # smallest element is popped out
-print(val)
+print(linear_search(arr,1))
 
-print(heapq.heappushpop(val,4))  # 1st smaller one pushes in and then pops out
-print(val)
+# bisect binary search
 
-print(heapq.heapreplace(val,3))
-print(val)
+a = [4,5,5,6,7,7,9,10,12,12,13]  # array must be sorted
+# a.sort() #use this if array not sorted
 
+print(bisect.bisect_left(a,5)) # bisect_left tell us left most position where the the 5 is to be inserted assuming array is sorted.
 
-print(heapq.nlargest(3, [7, 1, 5, 3, 10])) # in this iterable give me 3 largest element
+print(bisect.bisect_right(a,5)) # right most 
 
+bisect.insort(a,5)
+print(a)
 
-arr = [7,8,10,1,-15,2]
-heapq.heapify(arr)
-print(arr)
-
-# max heap
-arr = [6, 7, 8, 10, 9]
-pq = []
-for item in arr:
-    heapq.heappush(pq, -1 * item)
-print(-1*pq[0])
+# we use it binary search , sorted list
