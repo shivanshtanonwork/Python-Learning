@@ -1,5 +1,15 @@
-{1, 3, 5}
-{0, 1, 3, 5}
-{0, 1, 5}
-{0, 1, 5}
-{1, 5}
+   SHIVANSH TANDON.  
+   shivansh tandon.  
+   shivansh tandon.  
+   Shivansh Tandon.  
+Shivansh tandon.
+['Shivansh', 'tandon.']
+['   Shiv', 'nsh t', 'ndon.  ']
+Shivansh-Tandon
+   Shiva tandon.  
+12
+3
+False
+True
+3
+False

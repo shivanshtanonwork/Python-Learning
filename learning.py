@@ -3,21 +3,33 @@ import sys
 sys.stdin = open('input.txt','r')
 sys.stdout = open('output.txt','w')
 
-# Set methods
-# set doesn't allow to store duplicates like list
+# string methods
 
-st = {1, 5, 3, 1}
-print(st) # it stores everything in a sorted manner
+name = "   Shivansh tandon.  "
+# none of the methods impacts or changes the original string
+print(name.upper())
+print(name.lower())
+print(name.capitalize())
+print(name.title())
 
-st.add(0)
-print(st)
+print(name.strip())
 
-st.remove(3)
-print(st)
+print(name.split())
+print(name.split('a'))
 
-st.discard(15)
-print(st)
+arr = ["Shivansh", "Tandon"]
+print("-".join(arr))
 
-st.pop() # it always pops out the 1st element from the set
-print(st)
+ 
+print(name.replace("Shivansh", "Shiva"))
+
+print(name.find("tandon"))
+
+print(name.index("Shivansh"))
+
+print(name.startswith("h"))
+print(name.endswith(' '))
+
+print(name.count("n"))
+print(name.isalpha()) #False cause it has spaces 
 
